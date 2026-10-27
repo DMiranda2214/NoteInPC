@@ -1,0 +1,31 @@
+# --- Datos personales: cuadernos sincronizados desde Drive (nunca al repositorio) ---
+/NoteInDataSync/
+/Quick Start Guide*
+*.dbfile
+*.folders
+/salida/
+/_extract/
+
+# --- Credenciales y configuracion local ---
+.env
+.env.*
+rclone.conf
+*.token
+*.pem
+*.key
+
+# --- Cache y artefactos de Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Editor / sistema ---
+.vscode/
+.idea/
+.claude/
+.DS_Store
+*.swp

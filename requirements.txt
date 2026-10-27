@@ -1,0 +1,3 @@
+# Visor NoteIn: no necesita paquetes de Python de terceros (solo biblioteca estandar).
+# Dependencias del sistema (ver docs/REQUIREMENTS.md):
+#   python3 >= 3.9, poppler-utils (pdftoppm), rclone (opcional, para sincronizar)

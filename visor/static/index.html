@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visor NoteIn</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side" id="side">
+    <div class="side-head">
+      <h1>Mis cuadernos</h1>
+      <button id="syncBtn" class="btn" title="Sincronizar con Google Drive (rclone)">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-15.5 6.2M3 12A9 9 0 0 1 18.5 5.8"/><path d="M18.5 2v4h-4M5.5 22v-4h4"/></svg>
+        <span>Sincronizar</span>
+      </button>
+    </div>
+    <input id="search" type="search" placeholder="Buscar cuaderno…" autocomplete="off">
+    <nav id="tree" class="tree" aria-label="Carpetas y cuadernos"></nav>
+  </aside>
+
+  <main class="main">
+    <header class="bar" id="bar" hidden>
+      <button id="toggleSide" class="icon" title="Mostrar u ocultar la lista">☰</button>
+      <div class="title" id="noteTitle"></div>
+      <div class="spacer"></div>
+      <button class="icon" id="prev" title="Página anterior (←)">‹</button>
+      <label class="pageno"><input id="pageInput" type="number" min="1" value="1"> <span id="pageTotal"></span></label>
+      <button class="icon" id="next" title="Página siguiente (→)">›</button>
+      <span class="sep"></span>
+      <button class="icon" id="zoomOut" title="Alejar (−)">−</button>
+      <button class="zoomval" id="zoomFit" title="Ajustar al ancho (F)">Ajustar</button>
+      <button class="icon" id="zoomIn" title="Acercar (+)">+</button>
+    </header>
+    <div class="scroller" id="scroller">
+      <div class="empty" id="empty">
+        <p>Elige un cuaderno de la lista.</p>
+      </div>
+      <div id="pages" class="pages"></div>
+    </div>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
