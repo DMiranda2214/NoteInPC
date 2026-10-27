@@ -25,5 +25,5 @@ versionado según [SemVer](https://semver.org/lang/es/).
 - Extracción de ZIP que ignora entradas con rutas anidadas.
 - Los datos personales y credenciales quedan fuera de git mediante `.gitignore`.
 
-[Unreleased]: https://github.com/OWNER/NoteInPC/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/OWNER/NoteInPC/releases/tag/v0.1.0
+[Unreleased]: https://github.com/DMiranda2214/NoteInPC/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/DMiranda2214/NoteInPC/releases/tag/v0.1.0
